@@ -20,7 +20,7 @@ jobs:
           cache: 'maven'
       - name: Build with Maven
         run : |
-          ./mvnw clean install
+          mvn clean install
       - name : prints
         run : |
           echo "${{ github.workspace }}"
